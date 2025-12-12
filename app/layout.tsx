@@ -4,9 +4,35 @@ import "./globals.css";
 import { Header } from "./components/Header";
 
 export const metadata: Metadata = {
-  title: "Social Bevy",
-  description: "Home of Genie",
+  title: "Social Bevy — Your Social Concierge",
+  description:
+    "Ask Genie. Discover the best social experiences in your city—happy hours, brunches, vibes, and more.",
+  metadataBase: new URL("https://socialbevy.com"),
+  openGraph: {
+    title: "Social Bevy — Your Social Concierge",
+    description:
+      "Genie curates the best social experiences for you. Discover your next vibe.",
+    url: "https://socialbevy.com",
+    siteName: "Social Bevy",
+    images: [
+      {
+        url: "/images/socialbevylogo.png", // ⬅️ your logo in /public/images
+        width: 1200,                      // ideal OG size (optional but nice)
+        height: 630,
+        alt: "Social Bevy logo and Genie branding",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Social Bevy — Your Social Concierge",
+    description:
+      "Ask Genie. Curated spots, vibes, and experiences in your city.",
+    images: ["/images/socialbevylogo.png"],
+  },
 };
+
 
 export default function RootLayout({
   children,
