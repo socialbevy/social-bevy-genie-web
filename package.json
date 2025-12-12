@@ -2,12 +2,13 @@
   "name": "social-bevy",
   "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint"
-  },
+ "scripts": {
+  "dev": "next dev",
+  "build": "next build",
+  "start": "next start",
+  "lint": "next lint",
+  "dev-safe": "pkill -f 'next dev' || true && rm -f .next/dev/lock || true && next dev"
+},
   "dependencies": {
     "next": "16.0.6",
     "react": "19.2.0",
