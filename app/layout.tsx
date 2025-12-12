@@ -8,6 +8,12 @@ export const metadata: Metadata = {
   description:
     "Ask Genie. Discover the best social experiences in your city—happy hours, brunches, vibes, and more.",
   metadataBase: new URL("https://socialbevy.com"),
+
+  // ✅ Browser tab icon (favicon)
+  icons: {
+    icon: "/sb-logo-icon.png",
+  },
+
   openGraph: {
     title: "Social Bevy — Your Social Concierge",
     description:
@@ -16,14 +22,15 @@ export const metadata: Metadata = {
     siteName: "Social Bevy",
     images: [
       {
-        url: "/images/socialbevylogo.png", // ⬅️ your logo in /public/images
-        width: 1200,                      // ideal OG size (optional but nice)
+        url: "/images/socialbevylogo.png", // in /public/images
+        width: 1200,
         height: 630,
         alt: "Social Bevy logo and Genie branding",
       },
     ],
     type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
     title: "Social Bevy — Your Social Concierge",
@@ -32,7 +39,6 @@ export const metadata: Metadata = {
     images: ["/images/socialbevylogo.png"],
   },
 };
-
 
 export default function RootLayout({
   children,
