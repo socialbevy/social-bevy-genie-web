@@ -282,7 +282,7 @@ export default function HomePage() {
 
             <div className="mt-10 flex justify-center lg:justify-start">
               <Image
-                src="/images/Red-Genie.jpeg"
+                src="/images/red-genie-pic.png"
                 alt="Genie glowing"
                 width={320}
                 height={420}
