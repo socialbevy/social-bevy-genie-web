@@ -458,6 +458,7 @@ export default function HomePage() {
             </div>
             <span className="font-medium text-gray-200">Social Bevy</span>
           </div>
+
           <div className="flex flex-wrap gap-4">
             <a href="#features" className="hover:text-white">
               Genie
@@ -468,10 +469,18 @@ export default function HomePage() {
             <a href="#community" className="hover:text-white">
               Community
             </a>
-            <button className="hover:text-white">Contact</button>
-            <button className="hover:text-white">Terms</button>
-            <button className="hover:text-white">Privacy</button>
+
+            <Link href="/contact" className="hover:text-white">
+              Contact
+            </Link>
+            <Link href="/terms" className="hover:text-white">
+              Terms
+            </Link>
+            <Link href="/privacy" className="hover:text-white">
+              Privacy
+            </Link>
           </div>
+
           <p className="text-xs text-gray-500">
             © {new Date().getFullYear()} Social Bevy. All rights reserved.
           </p>
@@ -479,4 +488,4 @@ export default function HomePage() {
       </footer>
     </main>
   );
-}
+} 
